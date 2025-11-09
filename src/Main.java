@@ -1,4 +1,3 @@
-// NotificationDemo.java
 import java.util.Scanner;
 
 public class Main {
@@ -37,15 +36,11 @@ public class Main {
 
         scanner.close();
 
-        // Demonstrate extendability
-        System.out.println("\n=== Extendability Demo ===");
-        demonstrateExtendability();
     }
 
     private static void demonstrateExtendability() {
         System.out.println("Demonstrating how easy it is to add new channels:");
 
-        // Using same notification with different channels
         NutritionTipNotification tip = new NutritionTipNotification(new SMSNotification());
         tip.send();
 
