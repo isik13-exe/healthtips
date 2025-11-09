@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("=== Smart Notification System ===");
+        System.out.println("=== Smart Notification System ==");
         System.out.println("Available notification types:");
         System.out.println("1. Meal Plan Reminder (type 'meal')");
         System.out.println("2. Healthy Recipe (type 'recipe')");
