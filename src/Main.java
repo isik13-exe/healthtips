@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("=== Smart Notification System ==");
+        System.out.println("=== Smart Notification System ===");
         System.out.println("Available notification types:");
         System.out.println("1. Meal Plan Reminder (type 'meal')");
         System.out.println("2. Healthy Recipe (type 'recipe')");
@@ -36,18 +36,5 @@ public class Main {
 
         scanner.close();
 
-    }
-
-    private static void demonstrateExtendability() {
-        System.out.println("Demonstrating how easy it is to add new channels:");
-
-        NutritionTipNotification tip = new NutritionTipNotification(new SMSNotification());
-        tip.send();
-
-        NutritionTipNotification emailTip = new NutritionTipNotification(new EmailNotification());
-        emailTip.send();
-
-        NutritionTipNotification pushTip = new NutritionTipNotification(new PushNotification());
-        pushTip.send();
     }
 }
